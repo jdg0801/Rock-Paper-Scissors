@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rock Paper Scissors</title>
+<link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm d-flex justify-content-center align-items-center mt-auto">
+       <!-- <img src="images/cropped-1920-1080-1343198.png" alt="banner"> -->
+        <p>ROCK PAPER SCISSORS</p>
+    </nav>
+
+    <div class="container-sm  playing_space">
+        
+        <div class="row playing_space_heading d-flex justify-content-around">
+           <div class="col-3"> PLAYER </div>
+           <div class="col-3"> vs </div>
+           <div class="col-3"> COMPUTER</div>
+        </div>
+        <div class="row playing_space_main">
+          <div class="col-4">
+            <div class="row d-flex flex-column justify-content-center playing_space_main_player">
+            <div class="col-3 my-2"><a href="#" id="rock-btn"><img src="images/icons/noun-fist-477918.png" alt="rock" style="height: 82px; width:90px"  id="rock-btn-icon"></a> </div>
+            <div class="col-3 my-2"><a href="#" id="scissor-btn"><img src="images/icons/noun-scissors-477919.png" alt="scissors" style="height: 91px; width:90px" id="scissor-btn-icon"></a></div>
+            <div class="col-3 my-2"><a href="#"  id="paper-btn"><img src="images/icons/noun-hand-477922.png" alt="paper" style="height: 91px; width:90px"  id="paper-btn-icon"></a></div>
+        </div>
+        </div>
+        <div class="col-4">
+        <div class="row flex-column playing_space_main_score">
+            <div class="col-3"> <p> Player Score: <br> <span id = "p_score"> 0 </span></p></div>
+            <div class="col-3">
+                <p> Computer Score: <br> <span id="c_score"> 0 </span></p>
+            </div>
+            <div class="col-3"> <p id="g_result"></p></div>
+        </div>
+        </div>
+        <div class="col-4">
+            <div class="row flex-column playing_space_main_computer">
+                  <img src="" alt="" id="comp_choice">
+            </div>
+        </div>
+        </div>
+    </div>
+    <br>
+    <br> 
+    <br>
+    <div class="container-sm footer_bar">      
+        <div class="row footer_author">
+                <p> &copy;Jaideep Goswami</p>
+        </div>
+       
+    </div>
+<audio id="sound_win">
+    <source src="audio/ViceCityMissionPassedTheme.mp3" type="audio/mpeg">
+</audio>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

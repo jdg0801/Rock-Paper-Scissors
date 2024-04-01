@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family:"Pricedown Black" ;
+    src: url('fonts/pricedownbl.otf') format('opentype');
+}
+
+ @font-face {
+     font-family: 'Rage Italic';
+     font-style: normal;
+     font-weight: normal;
+     src: url('fonts/RAGE_1.woff') format('woff');
+ }
+
+ @font-face {
+     font-family: 'Signpainter';
+     font-style: normal;
+     font-weight: bolder;
+     src: url('fonts/SignPainterHouseScript.ttf') format('truetype');
+ }
+
+ @font-face {
+     font-family: "Bank Gothic";
+     src: url('fonts/BankGothicMdBT.ttf') format('truetype');
+ }
+
+ 
+
+body{
+    background: url(images/cropped-1920-1080-1343198.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Pricedown Black', arial;
+}
+
+nav{
+    height: 20vh;
+}
+
+nav img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    image-resolution: snap;
+}
+
+nav p{
+    color: whitesmoke;
+    font-size: 45px;
+    z-index: 2;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    nav p{
+        font-size: 2rem;
+        /* Reduce font size for screens up to 768px width (e.g., mobile phones) */
+    }
+}
+
+.playing_space{
+    width: 650px;
+}
+
+.playing_space .playing_space_heading div{
+    color: #2cd173;
+    font-size: 30px;
+    text-shadow: 2px 2px #545425;
+}
+
+.playing_space .playing_space_main div .playing_space_main_score{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+
+.playing_space .playing_space_main div .playing_space_main_score div p{
+    font-family: 'Rage Italic', arial;
+    color: yellow;
+    font-size: 25px;
+    text-align: center;
+    text-wrap: nowrap;
+    text-shadow: 1px 1px #545425;
+
+}
+
+.playing_space_main_computer{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_bar div .reset_button{
+    font-family: 'Signpainter', 'Pricedown Black';
+    font-size: 30px;
+    color: #4e1f69;
+}
+
+
+.footer_bar .footer_author p{
+    font-family: 'Bank Gothic', arial;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+#scissor-btn-icon{
+    transition: 0.5s linear;
+}
+
+#scissor-btn-icon:hover{
+    transform: scale(1.2);
+}
+
+#paper-btn-icon{
+    transition: 0.5s linear;
+}
+
+#paper-btn-icon:hover{
+    transform: scale(1.2);
+}
+
+#rock-btn-icon{
+    transition: 0.5s linear;
+}
+
+#rock-btn-icon:hover{
+    transform: scale(1.2);
+}
+
+#g_result{
+    font-family: 'Pricedown Black';
+    color: #ced631;
+    text-shadow: 1px 1px #545425;
+}
