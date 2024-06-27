@@ -55,9 +55,6 @@ function playGame(playerC) {
             player++;
         } else if (winner === "Computer Wins!") { // Added '!' for consistency
             computer++;
-        }else if(winner==="Tie!"){
-            player=player-1;
-            computer=computer-1;
         }
         updateScores();
         currentRound++;
